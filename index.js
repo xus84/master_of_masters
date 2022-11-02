@@ -4,7 +4,7 @@ require('dotenv').config()
 console.log(`The server is running on port:` + process.env.PORT)
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
-bot.start((ctx) => {
+bot.on("go",(ctx) => {
     let message = ` Please use /maestro command to talk to the GREAT MASTER`
     ctx.reply(message)
 })
