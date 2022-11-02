@@ -2,7 +2,7 @@
 const { Telegraf } = require('telegraf')
 require('dotenv').config()
 console.log(`The server is running on port:` + process.env.PORT)
-const bot = new Telegraf(process.env.BOT_TOKEN)
+const bot = new Telegraf(process.env.BOT_TOKEN, {username: 'maestro_de_maestros_bot'})
 
 bot.start((ctx)=> ctx.reply('Introduce /maestro para sentir tu ki'))  
 
