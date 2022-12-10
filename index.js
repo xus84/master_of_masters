@@ -10,4 +10,9 @@ bot.command('maestro', async (ctx)=> {
         await ctx.reply('dime kaizeneka')
 })
 
+bot.hears(/buenos dias/i, async (ctx) => {
+        await ctx.reply('Buenos dias ganad@r')
+})
+
+
 bot.launch()
